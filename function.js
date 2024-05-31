@@ -25,14 +25,40 @@
 // console.log(result);
 
 
-function loginMessage(username="Pratik")
-{
-    if(username===undefined)
-        {
-            console.log("please enter username");
-            return;
-        }
-    return `${username} just login`
+// function loginMessage(username="Pratik")
+// {
+//     if(username===undefined)
+//         {
+//             console.log("please enter username");
+//             return;
+//         }
+//     return `${username} just login`
+// }
+
+// console.log(loginMessage());
+
+
+// function calculateCartPrize(val1,val2,...num1)//rest operator
+// {
+//     return num1;
+// }
+// console.log(calculateCartPrize(100,200,300));
+
+//Object
+
+const user={
+    username:"Pratik",
+    prize:100000
 }
 
-console.log(loginMessage());
+function handleObject(anyobject)
+{
+    console.log(`username is ${anyobject.username} and prize is${anyobject.prize}`);
+}
+handleObject(user);
+
+function printArray(array)
+{
+    console.log(array);
+}
+printArray([1,2,3,4,5]);
